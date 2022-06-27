@@ -12,26 +12,30 @@
 
 /* обнуление */
 
-h1, p {margin: 0; padding: 0;}
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
 
-a{
+a {
   text-decoration: none;
 }
 
 /* разметка */
 
-body{
+body {
   margin: 0px;
   background-color: #FFFFFF;
 }
 
-.container{
+.container {
   max-width: 1024px;
   margin: 0 auto;
 }
 
 
-.btn{
+.btn {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -40,14 +44,14 @@ body{
   padding: 0;
 }
 
-.btn:hover{
+.btn:hover {
   filter: drop-shadow(0 0 3px black);
   transition-duration: 0.2s;
   transform: scale(1.2);
   background-color: blue;
 }
 
-.menu{
+.menu {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -57,28 +61,28 @@ body{
   box-shadow: 16px 0 52px rgb(14 24 80 / 20%);
 }
 
-::-webkit-scrollbar { 
-  display: none; 
+::-webkit-scrollbar {
+  display: none;
 }
 
 
-.menu__header{
+.menu__header {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   margin-top: 18.73px;
-  margin-bottom: 46px;
+  margin-bottom: 30px;
   margin-right: 24px;
   margin-left: 24px;
 }
 
-.image_pos{
+.image_pos {
   margin-top: 10px;
   margin-left: 10px;
 }
 
-.menu__logo{
+.menu__logo {
   position: relative;
   background: none;
   border: none;
@@ -88,21 +92,20 @@ body{
   margin-right: 80px;
 }
 
-.menu__items{
+.menu__items {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
+  height: 400px;
   list-style: none;
-  padding: 0;
-  margin: 0 16px 16px 16px;
+  padding: 10px;
+  margin-left: 16px;
   position: relative;
 }
 
-.menu__list{
-  padding: 12px;
-}
 
-.menu_list--default::before{
+
+.menu_list--default::before {
   content: '';
   position: absolute;
   height: 32px;
@@ -114,7 +117,7 @@ body{
   border-bottom-right-radius: 4px;
 }
 
-.menu__header--link{
+.menu__header--link {
   display: block;
   line-height: 24px;
   font-family: 'TTLakesSection', sans-serif;
@@ -125,17 +128,11 @@ body{
   width: auto;
 }
 
-
-.menu__header--link:hover{
+.menu__header--link:hover {
   color: #7E7E82;
 }
 
-.menu__header--link:focus{
-  color: #7E7E82;
-}
-
-
-.menu__footer{
+.menu__footer {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -143,24 +140,20 @@ body{
   margin-left: 24px;
 }
 
-.footer__contact{
+.footer__contact {
   display: flex;
   flex-direction: column;
 }
 
-.footer__btn{
+.footer__btn {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
+  width: 150px;
   margin-bottom: 16px;
 }
 
-.footer__call,
-.footer__chat{
-  margin-right: 16px;
-}
-
-.footer__mail{
+.footer__mail {
   line-height: 24px;
   font-family: 'TTLakesSection', sans-serif;
   height: 24px;
@@ -170,7 +163,7 @@ body{
   margin-bottom: 12px;
 }
 
-.footer__number{
+.footer__number {
   line-height: 32px;
   font-family: 'TTLakes';
   height: 32px;
@@ -180,11 +173,14 @@ body{
   margin-bottom: 40px;
 }
 
-.footer__lang{
+.footer__lang {
+  display: flex;
+  justify-content: space-between;
+  width: 90px;
   margin-bottom: 32px;
 }
 
-.footer__lang--items{
+.footer__lang--items {
   border: none;
   background: none;
   padding: 0;
@@ -192,16 +188,9 @@ body{
   font-family: 'TTLakesSection';
   font-size: 16px;
   line-height: 24px;
-  margin-right: 5px;
   color: #1B1C21;
 }
 
-.footer__lang--items:hover{
+.footer__lang--items:hover {
   color: #7E7E82;
 }
-
-
-.footer__lang--items:focus{
-  color: #7E7E82;
-}
-
